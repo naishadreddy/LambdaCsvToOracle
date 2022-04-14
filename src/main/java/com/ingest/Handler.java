@@ -159,7 +159,7 @@ public class Handler implements RequestHandler<Map<String,String>, String>{
          DatabaseUtil dbUtil = new DatabaseUtil();
          DatabaseCredentials dbCreds = new DatabaseCredentials();
          dbCreds.setUserName(Optional.ofNullable(envConfig.get("dbUser")).orElse("admin"));
-         dbCreds.setDbHost(Optional.ofNullable(envConfig.get("dbHost")).orElse("test.cn7bgbs2xvwq.us-east-2.rds.amazonaws.com"));
+         dbCreds.setDbHost(Optional.ofNullable(envConfig.get("dbHost")).orElse("test.hsjbdhasdvc.us-east-2.rds.amazonaws.com"));
          dbCreds.setPassword(Optional.ofNullable(envConfig.get("dbPassword")).orElse("admin123"));
          dbCreds.setDbPort(Optional.ofNullable(envConfig.get("dbPort")).orElse("1521"));
         dbCreds.setDbName(Optional.ofNullable(envConfig.get("dbName")).orElse("test"));
