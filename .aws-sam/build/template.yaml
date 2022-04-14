@@ -1,0 +1,21 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 1600
+      Handler: com.ingest.Handler
+      CodeUri: Function
+      Runtime: java11
+      Architectures:
+      - x86_64
+      Environment:
+        Variables:
+          s3Region: US_EAST_2
+          s3Bucket: inshore-docs
+          s3ObjectKey: BAF/example-userdata.csv
+          fileName: example-userdata.csv
+          fileDelimiter: ','
+          AWS_CONFIG_FILE: ~/.aws/credentials
+    Metadata:
+      SamResourceId: Function
